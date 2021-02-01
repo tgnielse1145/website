@@ -95,22 +95,17 @@ div .hideNews {
   display: none;
 }
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center
+  &__image {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+  }
+  &__text {
+    display: inline-block;
+    width: 46%;
+    @media (max-width: 620px) {
+      width: 100%;
+    }
+  }
 }
-
-img {
-  max-width: 100%
-}
-
-.image {
-  flex-basis: 40%
-}
-
-.text {
-  font-size: 20px;
-  padding-left: 20px;
-}
-
 
